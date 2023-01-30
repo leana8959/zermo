@@ -62,4 +62,3 @@ please believe that.
 Here's a video of my rabbit, Smalls, loaf'n to lofi beats:
 
 {{ youtube(id="UUpuz8IObcs") }}
-

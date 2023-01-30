@@ -4,7 +4,27 @@
 //   margin: 0 auto;
 // }
 
-.post {
+.on_repeat {
+  padding-bottom: 100px;
+
+  &__items {
+    float: left;
+    width: 60%;
+  }
+  &__images {
+    float: right;
+    width: 35%;
+    height: 10em;
+    overflow-x: scroll;
+  }
+  img {
+    float: right;
+    margin-left: auto;
+    width: 40%
+  }
+}
+
+.post, .on_repeat {
   width: 100%;
   text-align: left;
   margin: 20px auto;
@@ -55,7 +75,7 @@
       width: 100%;
       border-bottom: var(--border);
     }
-    
+
     a {
       text-decoration: none;
     }
@@ -74,6 +94,7 @@
       left: -20px;
       color: var(--accent);
     }
+
     ul {
 
       li:before {
@@ -96,12 +117,16 @@
   }
 }
 
+.post img {
+  border: 2px solid;
+}
+
 // TODO: try adapting this using a properly nested selector in the block above
 //       for ul items.
 .tag-list {
-    @media(max-width: $phone-max-width) {
-        margin-left: 5%;
-    }
+  @media(max-width: $phone-max-width) {
+    margin-left: 5%;
+  }
 }
 
 .footnote-definition {

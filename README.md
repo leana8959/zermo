@@ -1,3 +1,8 @@
+# Zermo
+This is a fork of zerm theme, with a light theme.
+Big thumbs up to Zola contributors who made all this possible.
+
+# Original [GitHub](https://github.com/getzola/zola) README below.
 # zerm
 
 a minimalist and dark theme for [Zola](https://getzola.org).

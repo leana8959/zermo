@@ -1,0 +1,30 @@
+{% macro on_repeat() %}
+    {%- if config.extra.enable_on_repeat -%}
+        <div class="on_repeat">
+            <h1>
+                On repeat
+            </h1>
+
+            <div class="on_repeat__items">
+                {# only show names as an ordered list if there's more than one item #}
+                {%- if config.extra.on_repeat | length == 1 -%}
+                <a href="{{ config.extra.on_repeat[0].video_url }}">{{ config.extra.on_repeat[0].name }}</a>
+                {%- else -%}
+                <ol>
+                    {%- for item in config.extra.on_repeat -%}
+                    <li>
+                        <a href="{{ item.video_url }}">{{ item.name }}</a>
+                    </li>
+                    {%- endfor -%}
+                </ol>
+                {%- endif -%}
+            </div>
+
+            <div class="on_repeat__images">
+                {%- for item in config.extra.on_repeat -%}
+                <a href="{{ item.video_url }}"><img src="{{ item.image_url }}"></a>
+                {%- endfor -%}
+            </div>
+        </div>
+    {%- endif -%}
+{% endmacro on_repeat %}

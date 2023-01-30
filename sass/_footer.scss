@@ -3,9 +3,9 @@
 .footer {
   padding: 40px 0;
   flex-grow: 0;
-  opacity: .5;
 
   &__inner {
+    opacity: .5;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,15 +32,13 @@
     // As a substitute, I'm going to use the alpha-70 version of accent.
     color: var(--accent-alpha-70);
 
-    &--user {
-      margin: auto;
-      text-align: center;
-    }
+    margin: auto;
+    text-align: center;
 
-    & > *:first-child:not(:only-child) {
+    &>*:first-child:not(:only-child) {
       margin-right: 10px;
 
-       @media (max-width: $tablet-max-width) {
+      @media (max-width: $tablet-max-width) {
         border: none;
         padding: 0;
         margin: 0;
@@ -51,6 +49,13 @@
       flex-direction: column;
       margin-top: 10px;
     }
+  }
+
+  .not-by-ai {
+    height: 50px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   // .copyright-theme-sep {

@@ -50,6 +50,11 @@
         {{  posts::taxonomies(taxonomy=page.taxonomies,
             disp_cat=config.extra.show_categories,
             disp_tag=config.extra.show_tags) }}
+
+        <div class="post-readtime">
+            Reading time: {{ page.reading_time }} min.
+        </div>
+
     </div>
 {% endmacro meta %}
 

@@ -1,12 +1,8 @@
 {% macro menu() %}
     <nav class="menu">
+
+        <div style="float: left; width: 80%">
         <ul class="menu__inner menu__inner--desktop">
-            {# 
-            I am almost certain this check isn't necessary, that it will always
-            return true, but the only alternative I can think of is the case where
-            this config value simply doesn't exist (null)? IDK, just copying from
-            original implementation for now.
-            #}
             {% if config.extra.show_menu_items is defined -%}
                 {% for menu_item in config.extra.main_menu | slice(end=config.extra.show_menu_items) -%}
                     {# 
@@ -33,10 +29,22 @@
                 {{ menu::items(menu=config.extra.main_menu) }}
             {%- endif -%}
         </ul>
+        </div>
 
         <ul class="menu__inner menu__inner--mobile">
             {{ menu::items(menu=config.extra.main_menu) }}
         </ul>
+
+        <div style="float: right">
+        <ul class="menu__language menu__language--desktop">
+            {% for lang in config.extra.language_menu -%}
+                <li>
+                    <a href="{{ menu::get_link(item=lang) }}">{{ lang.name }}</a>
+                </li>
+            {% endfor -%}
+        </ul>
+        </div>
+
     </nav>
 {% endmacro menu %}
 

@@ -11,6 +11,7 @@
 {% import "macros/footer.html" as footer -%}
 {% import "macros/extended_footer.html" as extended_footer -%}
 {% import "macros/comments.html" as comments -%}
+{% import "macros/on_repeat.html" as on_repeat -%}
 
 <!DOCTYPE html>
 <html lang="{{ lang }}">
@@ -66,6 +67,7 @@
             {%- endblock header -%}
             <div class="content">
                 {%-  block main -%}
+                    {{ on_repeat::on_repeat() }}
                     {{ lists::list_pages() }}
                 {%- endblock main -%}
             </div>

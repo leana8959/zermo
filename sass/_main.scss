@@ -10,11 +10,35 @@ html {
   box-sizing: inherit;
 }
 
+div[class=logo] {
+  font-family: 'IBM Plex Mono', Menlo, DejaVu Sans Mono, Monaco, Consolas, U, monospace;
+}
+
+ul[class*=menu__inner] {
+  font-family: 'IBM Plex Mono', Menlo, DejaVu Sans Mono, Monaco, Consolas, U, monospace;
+}
+
+ul[class*=menu__language] {
+  font-family: 'IBM Plex Mono', Menlo, DejaVu Sans Mono, Monaco, Consolas, U, monospace;
+}
+
+div[class*=menu-trigger] {
+  font-family: 'IBM Plex Mono', Menlo, DejaVu Sans Mono, Monaco, Consolas, U, monospace;
+}
+
+div[class="post-meta"] {
+  font-family: 'IBM Plex Mono', Menlo, DejaVu Sans Mono, Monaco, Consolas, U, monospace;
+}
+
+footer {
+  font-family: 'IBM Plex Mono', Menlo, DejaVu Sans Mono, Monaco, Consolas, U, monospace;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Fira Code', Menlo, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
-  font-size: 1rem;
+  font-family: 'Ubuntu', Menlo, DejaVu Sans Mono, Monaco, Consolas, U, monospace;
+  font-size: 1.15rem;
   line-height: 1.54;
   background-color: var(--background);
   color: var(--color);
@@ -29,8 +53,15 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'IBM Plex Mono', Menlo, DejaVu Sans Mono, Monaco, Consolas, U, monospace;
   line-height: 1.3;
+  margin-bottom: -10px;
 
   &:not(first-child) {
     margin-top: 40px;
@@ -45,8 +76,8 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom-color: transparent;
     cursor: pointer;
 
-    @media(max-width: $phone-max-width){
-        visibility: visible;
+    @media(max-width: $phone-max-width) {
+      visibility: visible;
     }
   }
 
@@ -73,18 +104,20 @@ h1, h2, h3, h4, h5, h6 {
 // Pawroman's
 // ---------------------
 h1 {
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   font-size: 1.15rem;
 }
 
@@ -96,6 +129,8 @@ a {
 img {
   display: block;
   max-width: 100%;
+
+  margin-right: 1%;
 
   &.left {
     margin-right: auto;
@@ -122,20 +157,20 @@ figure {
 
   &.left {
     // img {
-      margin-right: auto;
+    margin-right: auto;
     // }
   }
 
   &.center {
     // img {
-      margin-left: auto;
-      margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     // }
   }
 
   &.right {
     // img {
-      margin-left: auto;
+    margin-left: auto;
     // }
   }
 
@@ -161,57 +196,59 @@ figure {
 }
 
 code {
-  font-family: 'Fira Code', Menlo, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
+  font-family: 'IBM Plex Mono', Menlo, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
   font-feature-settings: normal;
   background: var(--accent-alpha-20);
-  color: var(--accent);
   padding: 1px 6px;
-  margin: 0 2px;
+  margin: 2px;
   font-size: .95rem;
 }
 
 pre {
-  font-family: 'Fira Code', Menlo, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
-  font-feature-settings: "liga";  
-  padding: 20px 10px;
+  font-family: 'IBM Plex Mono', Menlo, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
+  font-feature-settings: "liga";
+  padding: 5px 10px;
   font-size: .95rem;
   overflow: auto;
   border-top: 1px solid rgba(255, 255, 255, .1);
   border-bottom: 1px solid rgba(255, 255, 255, .1);
 
-  + pre {
+  +pre {
     border-top: 0;
     margin-top: -40px;
   }
-  
+
   @media (max-width: $phone-max-width) {
     white-space: pre-wrap;
     word-wrap: break-word;
   }
 
-    code {
-      background: none !important;
-      margin: 0;
-      padding: 0;
-      font-size: inherit;
+  code {
+    background: none !important;
+    color: #e7e7e7;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    border: none;
+
+    table {
+      table-layout: auto;
+      border-collapse: collapse;
+      box-sizing: border-box;
+      width: 100%;
+      margin: 00px 0;
+    }
+
+    table,
+    th,
+    td {
       border: none;
+      padding: 0px;
+    }
 
-      table {
-        table-layout: auto;
-        border-collapse: collapse;
-        box-sizing: border-box;
-        width: 100%;
-        margin: 00px 0;
-      }
-
-      table, th, td {
-        border: none;
-        padding: 0px;
-      }
-
-      table tr td:first-child {
-        padding-right: 10px;
-      }
+    table tr td:first-child {
+      padding-right: 10px;
+    }
 
   }
 }
@@ -263,7 +300,9 @@ table {
   margin: 40px 0;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px dashed var(--accent);
   padding: 10px;
 }
@@ -272,23 +311,25 @@ th {
   color: var(--accent);
 }
 
-ul, ol {
+ul,
+ol {
   margin-left: 30px;
   padding: 0;
 
   li {
-      position: relative;
-      margin-top: 5px;
-      margin-bottom: 5px;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   @media (max-width: $phone-max-width) {
     margin-left: 20px;
   }
 
-  ul, ol {
-      margin-top: 10px;
-      margin-bottom: 10px;
+  ul,
+  ol {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -300,7 +341,7 @@ ol ol {
   display: flex;
   flex-direction: column;
   padding: 40px;
-  max-width: 864px;
+  max-width: 870px;
   min-height: 100vh;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
 
@@ -319,9 +360,10 @@ ol ol {
   }
 }
 
-.content {
-  display: flex;
-}
+// This somehow breaks page width in index.html
+// .content {
+//   display: flex;
+// }
 
 hr {
   width: 100%;

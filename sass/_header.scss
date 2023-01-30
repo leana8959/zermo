@@ -42,18 +42,18 @@
   }
 
   .menu {
-    margin: 20px 0;
+    margin: 10px 0;
     --shadow-color: var(--accent-alpha-70);
     --shadow: 0 10px var(--shadow-color), -10px 10px var(--shadow-color), 10px 10px var(--shadow-color);
 
     @media (max-width: $phone-max-width) {
-        @include menu;
-        position: absolute;
-        top: 50px;
-        right: 0;
+      @include menu;
+      position: absolute;
+      top: 50px;
+      right: 0;
     }
 
-    &__inner {
+    &__inner, &__language {
       // @include menu;
       display: flex;
       flex-wrap: wrap;
@@ -62,9 +62,9 @@
       padding: 0;
 
       &--desktop {
-          @media (max-width: $phone-max-width) {
-              display: none;
-          }
+        @media (max-width: $phone-max-width) {
+          display: none;
+        }
       }
 
       &--mobile {
@@ -76,6 +76,7 @@
       }
 
       li {
+
         // &.active {
         //   color: var(--accent-alpha-70);
         // }
@@ -126,7 +127,7 @@
         }
       }
     }
-      
+
     &-trigger {
       color: var(--accent);
       border: 2px solid;

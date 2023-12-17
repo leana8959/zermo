@@ -21,7 +21,9 @@ author          = "Léana" # Author name to be added to posts, if enabled.
 show_author     = false   # Show author's name in blog post meta data.
 show_categories = true    # Show categories a blog post is marked with in its meta data.
 show_tags       = true    # Show tags a blog post is marked with in its meta data.
-theme_color     = "lilac" # one of ["orange", "blue", "red", "green", "pink", "lilac"]
+
+# one of ["dark_orange", "dark_blue", "dark_red", "dark_green", "dark_pink", "light_lilac", "light_blue"]
+theme_color = "light_lilac"
 
 # Custom css to style over the defaults. This is useful when you only have a
 # few small tweaks to make rather than a major rehaul to the theme.

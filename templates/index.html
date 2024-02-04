@@ -16,6 +16,11 @@
 <!DOCTYPE html>
 <html lang="{{ lang }}">
     <head>
+
+        {%- if config.extra.script -%}
+            {{ config.extra.script }}
+        {%- endif -%}
+
         {%- block title -%}
             <title>{{ config.title }}</title>
         {%- endblock title -%}

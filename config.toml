@@ -17,6 +17,10 @@ taxonomies = [
 
 [extra] # Put all your custom variables here
 
+# inject extra scripts in the <head> tag
+# script = '''
+# '''
+
 author          = "Léana" # Author name to be added to posts, if enabled.
 show_author     = false   # Show author's name in blog post meta data.
 show_categories = true    # Show categories a blog post is marked with in its meta data.

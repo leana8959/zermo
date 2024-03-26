@@ -21,7 +21,7 @@ taxonomies = [
 # script = '''
 # '''
 
-author          = "Léana" # Author name to be added to posts, if enabled.
+author          = "You!"  # Author name to be added to posts, if enabled.
 show_author     = false   # Show author's name in blog post meta data.
 show_categories = true    # Show categories a blog post is marked with in its meta data.
 show_tags       = true    # Show tags a blog post is marked with in its meta data.
@@ -74,10 +74,11 @@ enable_katex = true # Enable math typesetting with KaTeX
 
 # Generate "on repeat" music section on the homepage
 # TODO: make this prettier
+# FIXME: currently broken
 enable_on_repeat = false
 on_repeat = [
-    { name = "test", video_url = "https://www.youtube.com/watch?v=yXgW2q71ZQU&pp=ygUZcmlnaHQgcm91bmQgcGl0Y2ggcGVyZmVjdA%3D%3D", image_url = "https://i.discogs.com/i8QXetu8PhixkQDP-rzPrpXLsZ5Kpxjq5am67m-ffPU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2NzE5/MjItMTQxNzI2ODM3/NC0xOTg0LmpwZWc.jpeg" },
-    { name = "test1", video_url = "https://www.youtube.com/watch?v=yXgW2q71ZQU&pp=ygUZcmlnaHQgcm91bmQgcGl0Y2ggcGVyZmVjdA%3D%3D", image_url = "https://i.discogs.com/i8QXetu8PhixkQDP-rzPrpXLsZ5Kpxjq5am67m-ffPU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2NzE5/MjItMTQxNzI2ODM3/NC0xOTg0LmpwZWc.jpeg" },
+    { name = "test", video_url = "some_url", image_url = "some_url" },
+    { name = "test1", video_url = "some_url", image_url = "some_url" },
 ]
 
 # Options for disqus

@@ -1,6 +1,6 @@
 # Zermo
 This is a fork of zerm theme, with a light theme.
-Big thumbs up to Zola contributors who made all this possible.
+Big thumbs up to Zola and zermo contributors who made all this possible.
 
 # Original [GitHub](https://github.com/getzola/zola) README below.
 # zerm
